@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="he" dir="rtl">
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,8 @@
       padding: 20px;
       max-width: 800px;
       margin: auto;
+      position: relative;
+      z-index: 1;
     }
     h1 {
       text-align: center;
@@ -52,31 +55,73 @@
       display: block;
       margin: 5px 0;
     }
+    .april-fool {
+      text-align: center;
+      font-size: 2em;
+      color: #d9534f;
+      margin-top: 20px;
+    }
+    /* Bacteria animation container */
+    #bacteria-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 0;
+    }
+    /* Style for each bacteria SVG */
+    .bacteria {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      animation: moveBacteria linear infinite;
+    }
+    @keyframes moveBacteria {
+      0% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(100vw, 100vh);
+        opacity: 0;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>משפטים שאנשים רוחניים אומרים</h1>  <div class="phrase">
+  <h1>משפטים שאנשים רוחניים אומרים</h1>
+  <div class="phrase">
     <h2>לצאת מאזור הנוחות</h2>
     <p>תהיו מופתעים לשמוע שאנשים רוחניים מרבים להגיד "לצאת מאזור הנוחות". זה למעשה אחד מהביטויים הכי נפוצים בקרב אנשים רוחניים. לפי סקר שנערך ב-1974, אחד לעשר מאנשי הרוח משתמשים בביטוי זה בשפה היום-יומית שלהם. מה שמפתיע זה שהרבה אנשים מנסים להתחזות לאנשים רוחניים ועושים זאת על ידי שימוש בביטוי זה. וזה מביא אותנו לביטוי הבא:</p>
-  </div>  <div class="phrase">
+  </div>
+  <div class="phrase">
     <h2>זה לא מצחיק</h2>
-    <p>תהיו מופתעים לשמוע שלאנשים רוחניים אין חוש הומור (או לפחות חוש הומור מוגבל). זה לא דבר חדש בימים אלו. נראו בשנים האחרונות הרבה טעויות של אנשים רוחניים שאמרו שיש להם חוש הומור אבל בפועל לא היה להם בכלל חוש הומור. אלו אחת התגליות הכי מרשימות של מכון המדע הבין-לאומי בנוגע למחקרים על הביטויים שאנשים רוחניים משתמשים בהם בשפת היום-יום שלהם.</p>
-  </div>  <div class="phrase">
+    <p>תהיו מופתעים לשמוע שלאנשים רוחניים אין חוש הומור (או לפחות חוש הומור מוגבל). זה לא דבר חדש בימים אלו. נראו בשנים האחרונות הרבה טעויות של אנשים רוחניים שאמרו שיש להם חוש הומור אבל בפועל לא היה להם בכלל חוש הומור. אלו אחת התגליות הכי מרשימות של מכון המדע הבין-לאומי בנוגע למחקרים על הביטויים שאנשים רוחניים משתמשים בהם בשפת היום-יומית שלהם.</p>
+  </div>
+  <div class="phrase">
     <h2>אין כזה דבר חברה</h2>
     <p>תהיו מופתעים לשמוע שאנשים רוחניים משתמשים בביטוי "אין כזה דבר חברה". התושבים של עיר האנשים הרוחניים חיזקו את הטענה ואמרו שזה באמת אחד מהביטויים הכי נפוצים בקרב אנשים רוחניים.</p>
-  </div>  <div class="phrase">
+  </div>
+  <div class="phrase">
     <h2>אדמה זה אדמה</h2>
     <p>הרבה אנשים לא מודים בקיום ביטוי זה, אך הרבה מהתרבות של האנשים הרוחניים מבוססת עליו. המשמעות של הביטוי לא ידועה לאנשים שאינם רוחניים ולכן כדי להבין אותו לעומק יש להתבצע בתרבות של אנשים רוחניים.</p>
-  </div>  <div class="phrase">
+  </div>
+  <div class="phrase">
     <h2>מגיע לך</h2>
     <p>על פי דובר החדשות של כאן 11, חיים דולפין, ביטוי זה גם נפוץ בקרב אנשים רוחניים. לטענתו של דולפין, מי שלא משתמש בביטוי הזה הוא הלב של הלא רוחניים אף על פי שאין להם כלבים (כידוע, לרוב האנשים הרוחניים יש כלבים).</p>
-  </div>  <div class="phrase">
+  </div>
+  <div class="phrase">
     <h2>אני אעשה ממך מיץ עגבניות</h2>
-    <p>למרבה המזל, לרבים מהאנשים הרוחניים יש חוש הומור. באומרם את הביטוי "אני אעשה ממך מיץ עגבניות" הם מתוודים שהם רוחניים ושיש להם חוש הומור. אבל יבוא הכלב החכם ויגיד: "אבל זה לא נוגד את העובדה שלאנשים רוחניים אין חוש הומור?" וזה מביא אותנו לביטוי הבא הנפוץ בקרב אנשים רוחניים.</p>
-  </div>  <div class="phrase">
+    <p>למרבה המזל, לרבים מהאנשים רוחניים יש חוש הומור. באומרם את הביטוי "אני אעשה ממך מיץ עגבניות" הם מתוודים שהם רוחניים ושיש להם חוש הומור. אבל יבוא הכלב החכם ויגיד: "אבל זה לא נוגד את העובדה שלאנשים רוחניים אין חוש הומור?" וזה מביא אותנו לביטוי הבא הנפוץ בקרב אנשים רוחניים.</p>
+  </div>
+  <div class="phrase">
     <h2>אבל זו סתירה!</h2>
     <p>כן, כן, תופתעו לשמוע שבתרבות הרוח ישנן סתירות רבות. חלקן נובעות מהביטויים שהם משתמשים בהם ביום-יום (כמו הסתירה שצוינה לעיל) וחלקן נובעות מפרדוקסים פנימיים שיש בתרבות. חיים דולפין, דובר החדשות של כאן 11, הסכים עם טענה זו בנחרצות. לטענתו, מי שלא משתמש בביטוי "אבל זו סתירה!" הוא לא סותר את עצמו ולכן אינו רוחני.</p>
-  </div><button onclick="startQuiz()">בדוק את רמת הרוחניות שלך</button>
+  </div>
+  <button onclick="startQuiz()">בדוק את רמת הרוחניות שלך</button>
 
   <div id="quiz" style="display:none">
     <div class="question">
@@ -110,10 +155,91 @@
       <label><input type="radio" name="q5" value="0"> מקנא</label>
     </div>
     <button onclick="submitQuiz()">קבל תוצאה</button>
-  </div>  <div id="result"></div>  <script>
+  </div>
+  <div id="result"></div>
+  
+  <script>
+    // Record the start time when the page loads
+    const startTime = new Date();
+
     function startQuiz() {
       document.getElementById("quiz").style.display = "block";
       document.getElementById("result").textContent = "";
+    }
+
+    function createBacteriaSVG() {
+      const svgNS = "http://www.w3.org/2000/svg";
+      const svg = document.createElementNS(svgNS, "svg");
+      svg.setAttribute("width", "80");
+      svg.setAttribute("height", "80");
+      svg.setAttribute("viewBox", "0 0 100 100");
+      svg.classList.add("bacteria");
+
+      // Define defs with a gradient for fill
+      const defs = document.createElementNS(svgNS, "defs");
+      const linearGradient = document.createElementNS(svgNS, "linearGradient");
+      linearGradient.setAttribute("id", "grad" + Math.random());
+      const stop1 = document.createElementNS(svgNS, "stop");
+      stop1.setAttribute("offset", "0%");
+      stop1.setAttribute("stop-color", "#6ab04c");
+      const stop2 = document.createElementNS(svgNS, "stop");
+      stop2.setAttribute("offset", "100%");
+      stop2.setAttribute("stop-color", "#badc58");
+      linearGradient.appendChild(stop1);
+      linearGradient.appendChild(stop2);
+      defs.appendChild(linearGradient);
+      svg.appendChild(defs);
+
+      // Create the morphing bacteria body
+      const body = document.createElementNS(svgNS, "path");
+      body.setAttribute("fill", "url(#" + linearGradient.getAttribute("id") + ")");
+      body.setAttribute("stroke", "#000");
+      body.setAttribute("stroke-width", "1");
+      body.setAttribute("d", "M50,10 C70,10,90,30,90,50 C90,70,70,90,50,90 C30,90,10,70,10,50 C10,30,30,10,50,10");
+      
+      const animate = document.createElementNS(svgNS, "animate");
+      animate.setAttribute("attributeName", "d");
+      animate.setAttribute("dur", "4s");
+      animate.setAttribute("repeatCount", "indefinite");
+      animate.setAttribute("values",
+        "M50,10 C70,10,90,30,90,50 C90,70,70,90,50,90 C30,90,10,70,10,50 C10,30,30,10,50,10;" +
+        "M50,15 C75,15,95,35,95,50 C95,65,75,85,50,85 C25,85,5,65,5,50 C5,35,25,15,50,15;" +
+        "M50,10 C70,10,90,30,90,50 C90,70,70,90,50,90 C30,90,10,70,10,50 C10,30,30,10,50,10"
+      );
+      body.appendChild(animate);
+      svg.appendChild(body);
+
+      // Add eyes
+      const eye1 = document.createElementNS(svgNS, "circle");
+      eye1.setAttribute("cx", "35");
+      eye1.setAttribute("cy", "40");
+      eye1.setAttribute("r", "3");
+      eye1.setAttribute("fill", "#000");
+      svg.appendChild(eye1);
+
+      const eye2 = document.createElementNS(svgNS, "circle");
+      eye2.setAttribute("cx", "65");
+      eye2.setAttribute("cy", "40");
+      eye2.setAttribute("r", "3");
+      eye2.setAttribute("fill", "#000");
+      svg.appendChild(eye2);
+
+      // Add a mouth and zigzag teeth
+      const mouth = document.createElementNS(svgNS, "path");
+      mouth.setAttribute("d", "M30,60 Q50,75 70,60");
+      mouth.setAttribute("fill", "none");
+      mouth.setAttribute("stroke", "#000");
+      mouth.setAttribute("stroke-width", "2");
+      svg.appendChild(mouth);
+
+      const teeth = document.createElementNS(svgNS, "path");
+      teeth.setAttribute("d", "M30,60 L35,55 L40,60 L45,55 L50,60 L55,55 L60,60 L65,55 L70,60");
+      teeth.setAttribute("fill", "none");
+      teeth.setAttribute("stroke", "#000");
+      teeth.setAttribute("stroke-width", "1");
+      svg.appendChild(teeth);
+
+      return svg;
     }
 
     function submitQuiz() {
@@ -134,7 +260,43 @@
       } else {
         message = "אתה לא רוחני בכלל. אולי פשוט תאמר: 'אבל זו סתירה!' ותתחיל מחדש.";
       }
-      document.getElementById("result").textContent = message;
+      
+      // Calculate elapsed time in seconds
+      const endTime = new Date();
+      const elapsedSeconds = Math.floor((endTime - startTime) / 1000);
+      
+      // Create the time message and April Fool message
+      const timeMessage = `<p>הקדשת לאתר זמן של ${elapsedSeconds} שניות.</p>`;
+      const aprilFoolMessage = `<div class="april-fool">זהו 1 באפריל!</div>`;
+      
+      // Display the final message
+      document.getElementById("result").innerHTML = message + timeMessage + aprilFoolMessage;
+      
+      // Create the bacteria animation container dynamically
+      const bacteriaContainer = document.createElement('div');
+      bacteriaContainer.id = 'bacteria-container';
+      document.body.appendChild(bacteriaContainer);
+      
+      // Generate many big, cruel, smiling bacteria using SVG
+      const bacteriaCount = 15;
+      for (let i = 0; i < bacteriaCount; i++) {
+        const bacteria = createBacteriaSVG();
+        // Randomize position, animation duration, and delay
+        const leftPos = Math.random() * 100;
+        const topPos = Math.random() * 100;
+        const duration = 10 + Math.random() * 10;
+        const delay = Math.random() * 5;
+        bacteria.style.left = leftPos + '%';
+        bacteria.style.top = topPos + '%';
+        bacteria.style.animationDuration = duration + 's';
+        bacteria.style.animationDelay = delay + 's';
+        bacteriaContainer.appendChild(bacteria);
+      }
+      
+      // Scroll the page to the bottom so the result is visible
+      window.scrollTo(0, document.body.scrollHeight);
     }
-  </script></body>
+  </script>
+</body>
 </html>
+
